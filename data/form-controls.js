@@ -1,5 +1,5 @@
-self.port.on("add-name", function(name){
-	document.getElementById("booking_first_name").value=name;
+self.port.on("first-name", function(firstname){
+	document.getElementById("booking_first_name").value=firstname;
 });
 
 self.port.on("last-name", function(lastname){
