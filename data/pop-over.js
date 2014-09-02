@@ -1,6 +1,6 @@
-var button = document.getElementById("pop-over");
+var span = document.getElementById("make-booking");
 
-button.addEventListener('click', function (event) {
+span.addEventListener('click', function (event) {
 	self.port.emit("fill-booking-form", {
 		firstname: "Cameron", 
 		lastname: "Bradley",
@@ -12,7 +12,26 @@ button.addEventListener('click', function (event) {
 		creditcardname: "Cameron Bradley",
 		creditcardccv: "100",
 		creditcardmonthexpiry: "10",
-		creditcardyearexpiry: "2020",
+		creditcardyearexpiry: "2015",
 		termsandconditions: "true"
-	});
+	}); 
+}, false);
+
+
+var hooroo_link = document.getElementById("hooroo");
+
+hooroo_link.addEventListener("click", function (event) {
+	self.port.emit("open-hooroo");
+}, false);
+
+var jetstar_link = document.getElementById("jetstar");
+
+jetstar_link.addEventListener("click", function (event) {
+	self.port.emit("open-jetstar");
+}, false);
+
+var qantas_link = document.getElementById("qantas");
+
+qantas_link.addEventListener("click", function (event) {
+	self.port.emit("open-qantas");
 }, false);

@@ -1,0 +1,100 @@
+ul
+{
+list-style-type: none;
+}
+
+body {
+	background: #000 url(background.png);
+	color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 20px 15px 15px;
+	position: relative;
+	width: 450px;
+}
+
+.theme-changer {
+	height: 43px;
+	margin-bottom: 15px;
+}
+.theme-changer li {
+	display: block;
+	float: left;
+	height: 100%;
+	width: 125px;
+}
+.theme-changer li:last-child {
+	margin: 0;
+}
+.theme-changer a {
+	background: url(buttons.png) 0 -43px;
+	display: block;
+	height: 100%;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+.theme-changer a.hooroo.current, .theme-changer a.hooroo:hover {
+	background-position: 0 0;
+}
+.theme-changer a.jetstar {
+	background-position: -125px -43px;
+}
+.theme-changer a.jetstar.current, .theme-changer a.jetstar:hover {
+	background-position: -125px 0;
+}
+.theme-changer a.qantas {
+	background-position: -250px -43px;
+}
+.theme-changer a.qantas.current, .theme-changer a.qantas:hover {
+	background-position: -250px 0;
+}
+
+.booking {
+	margin-bottom: 15px;
+}
+
+.big-button li {
+	background: #9ed151;
+	background-size: 40px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	height: 39px;
+	letter-spacing: -1px;
+	line-height: 39px;
+	width: 375px;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(113,150,58,.75);
+}
+
+.big-button span {
+	cursor: pointer;
+	display: block;
+}
+.big-button span:hover {
+	background-color: #95c54c;
+}
+
+.big-button .default .main {
+	text-indent: 0;
+	width: 375px;
+}
+
+.booking .extras {
+	transition: all 0.5s ease-in-out;
+	display: none;
+}
+.booking .extras.visible {
+	display: block;
+}
+
+.logo {
+	background: url(logo.png) top left no-repeat;
+	height: 19px;
+	overflow: hidden;
+	text-indent: 100%;
+	margin-top: 20px;
+	margin-left: 40px;
+	width: 98px;
+	white-space: nowrap;
+}

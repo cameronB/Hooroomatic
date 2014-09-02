@@ -36,10 +36,12 @@ self.port.on("credit-card-ccv", function(creditcardccv){
 
 self.port.on("credit-card-month-expiry", function(creditcardmonthexpiry){
 	document.getElementById("month-button").getElementsByClassName("ui-selectmenu-status")[0].innerHTML=creditcardmonthexpiry
+	document.getElementById("month").value=creditcardmonthexpiry;
 });
 
 self.port.on("credit-card-year-expiry", function(creditcardyearexpiry){
 	document.getElementById("year-button").getElementsByClassName("ui-selectmenu-status")[0].innerHTML=creditcardyearexpiry
+	document.getElementById("year").value=creditcardyearexpiry;
 });
 
 self.port.on("terms-and-conditions", function(termsandconditions){
