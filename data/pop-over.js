@@ -17,6 +17,11 @@ span.addEventListener('click', function (event) {
 	}); 
 }, false);
 
+var logo = document.getElementById("logo");
+
+logo.addEventListener("click", function (event) {
+	self.port.emit("open-options");
+}, false);
 
 var hooroo_link = document.getElementById("hooroo");
 
